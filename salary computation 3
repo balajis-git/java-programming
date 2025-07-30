@@ -1,1 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<15000){
+            double b=a+(0.15*a)+(0.90*a);
+            System.out.printf("%.2f",b);
+        }
+        else{
+            double b=a+(5000*a)+(0.90*a);
+                System.out.printf("%.2f",b);
+        }
+    }
+}
